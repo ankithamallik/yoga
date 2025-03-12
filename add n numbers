@@ -1,0 +1,9 @@
+def add_numbers(n):
+    total = 0
+    for i in range(n):
+        num = float(input(f"Enter number {i + 1}: "))  # Get input from the user
+        total += num  # Add the number to the total
+    return total
+n = int(input("Enter the number of numbers to add: "))
+result = add_numbers(n)
+print(f"The sum of the {n} numbers is: {result}")
